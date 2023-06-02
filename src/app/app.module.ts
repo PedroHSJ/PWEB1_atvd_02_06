@@ -20,6 +20,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MensagemService} from './shared/services/mensagem.service';
 import {MensagemSweetService} from './shared/services/mensagem-sweet.service';
 import {IMensagem} from './shared/modelo/IMensagem';
+import { MensagemConsoleService } from './shared/services/mensagem-console.service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import {IMensagem} from './shared/modelo/IMensagem';
   providers: [
     {
       provide: IMensagem,
-      useClass: MensagemService
+      useClass: MensagemConsoleService
     }
   ],
   bootstrap: [AppComponent]

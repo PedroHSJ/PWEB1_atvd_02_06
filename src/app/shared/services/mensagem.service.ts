@@ -9,6 +9,9 @@ export class MensagemService implements IMensagem {
 
   constructor(private snackBar: MatSnackBar) {
   }
+  alert(mensagem: string): void {
+    throw new Error("Method not implemented.");
+  }
 
   info(mensagem: string): void {
     this.abrirSnack(mensagem,['info-snackbar']);

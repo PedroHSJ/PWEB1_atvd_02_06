@@ -21,7 +21,7 @@ import {MatTableModule} from '@angular/material/table';
   declarations: [
     ListagemUsuariosComponent,
     MantemUsuarioComponent,
-    ListagemUsuariosTabelaComponent
+    ListagemUsuariosTabelaComponent,
   ],
   imports: [
     CommonModule,

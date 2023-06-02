@@ -8,6 +8,9 @@ import Swal from 'sweetalert2';
 export class MensagemSweetService implements IMensagem {
 
   constructor() { }
+  alert(mensagem: string): void {
+    throw new Error("Method not implemented.");
+  }
 
   erro(mensagem: string): void {
     Swal.fire(
